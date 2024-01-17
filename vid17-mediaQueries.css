@@ -1,0 +1,68 @@
+/* min-width (se upar) (atleast) (BEYOND GIVEN WIDTH) */
+/* min-width: 400px MEANS 400px SE UPAR */
+
+/* max-width (tak) (atmost) (WITHIN GIVEN WIDTH) */
+/* max-width: 400px MEANS 400px TAK */
+
+
+/*  SYNTAX:-
+        @media not|only mediatype and (media feature) and (media feature) {
+             CSS-Code;
+        }
+    - mediatype:
+            all, print, screen
+    
+    [NOTE: IF USING not|only, THEN SPECIFY MEDIATYPE ALSO]
+
+    - media feature:
+            max-width, min-width, max-height, min-height, height, width, orientation
+*/
+
+/*working fine on w3schools*/
+
+/* max-width */
+/*600px tak*/
+@media only screen and (max-width: 600px){
+    h2{
+        font-size: 80px;
+        color:green;
+    }
+}
+
+/*500px tak*/
+@media only screen and (max-width: 500px){
+    h2{
+        font-size: 50px;
+        color:blue;
+    }
+}
+
+/*400px tak*/
+@media only screen and (max-width: 400px){
+    h2{
+        font-size: 10px;
+        color:red;
+    }
+}
+
+/* min-width*/
+/* @media only screen and (min-width: 400px){
+    h2{
+        font-size: 10px;
+        color:red;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    h2{
+        font-size: 50px;
+        color:blue;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    h2{
+        font-size: 80px;
+        color:green;
+    }
+} */

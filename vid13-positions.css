@@ -1,0 +1,61 @@
+/* 
+    CSS POSITIONS: static(default), relative, fixed, absolute, sticky
+    POSITION OFFSET: top/right/bottom/left
+*/
+/* STATIC
+    - default position */
+
+
+/* RELATIVE 
+    - moves as per offset value FROM THE CURRENT POSITION
+    - without offset value, it works as static */
+.rel{
+    position: relative;
+    bottom: 25px;
+    left: 40px;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+
+/* FIXED 
+    - gets FIXED as per offset value FROM THE PAGE POSITION
+    - if no offset given, then gets FIXED on current position
+    - next element comes on its place, to avoid this USE POSITION:STICKY
+    - element act as inline element */
+.fx{
+    position: fixed;
+    top:150px;
+    left: 70px;
+    background-color: blueviolet;
+    color: aliceblue; 
+}
+
+
+/* ABSOLUTE
+    - must have parent with POSITION:RELATIVE
+    - if no parent provided, it assumes <body> as parent, positions as per it then*/
+.dv{
+        position: relative;
+        height: 150px;
+        width: 280px;
+        border: 4px dashed blueviolet;
+}
+.abs{
+        background-color: blueviolet;
+        position: absolute;
+        color:aliceblue;
+        top: 0px;
+        left: 0px;
+}
+
+/* STICKY
+    - it drags with scroll till its offset value is marked then sticks at that value, POSITION:FIXED do not drags
+    - its place remains vacant whereas in POSITION:FIXED space gets occupied by next element */
+.st{
+    position:sticky;
+    /* as soon as it drags up till top:40px, it will stick there  */
+    top:70px;
+    background-color: blueviolet;
+    color: aliceblue;
+}

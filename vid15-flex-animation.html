@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./vid15-flex-animation.css">
+    <title>flex-animation</title>
+</head>
+<body>
+    
+    <!-- 
+        ANIMATION: TRANSITIONS
+    -->
+    
+    <button>Click Here</button>
+    
+    <br/><hr/><br/><hr/>
+
+    <!-- 
+        FLEXBOX:-
+        - used for layout
+        - 1D: can be either row-wise or column-wise
+
+        - if the PARENT has DISPLAY:FLEX, then its children will have FLEXBOX properties
+        - thus, to have PARENT with FLEXBOX properties, the PARENT's PARENT must be there with DISPLAY:FLEXBOX
+
+        ATTRIBUTES:-
+        - flex-direction: row/column
+            row
+                - horizontal (x-axis): justify-content (trick to remember: justify goes in direction of its flex-direction)
+                - vertical (y-axis): align-items
+            column
+                - horizontal (x-axis): align-items
+                - vertical (y-axis): justify-content  (trick to remember: justify goes in direction of its flex-direction)
+        - gap: 5px
+        - flex-wrap: wrap (dynamic feature)
+
+        NOTE:-
+        - If block-scope item is wrapped inside a "DISPLAY:FLEX" item,
+          the block-scope item will act as inline item
+     -->
+    <div class="parent">
+        <div class="child"> 1 </div>
+        <div class="child"> 2 </div>
+        <div class="child"> 3 </div>
+        <div class="child"> 4 </div>
+        <div class="child"> 5 </div>
+        <!-- <div class="child"> 6 </div> -->
+        <!-- <div class="child"> 7 </div> -->
+        <!-- <div class="child"> 8 </div> -->
+        <!-- <div class="child"> 9 </div> -->
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* 
+    CSS Selectors:
+        * universal
+        # id
+        . class
+        h2/p/span etc. element
+        descendent
+        direct child
+        selector list
+*/
+
+p{
+    background-color: #0000ff;
+    color:aliceblue;
+    text-align: center;
+}

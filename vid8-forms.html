@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <!-- Forms tag:
+                <form>
+                <input/>
+                <label>
+             Attributes:
+                type ="text/number/password/radio/checkbox"     to allow only specific entry
+                checked                                         for radio/checkbox to check one by default
+                disabled                                        restrict from selection/checking
+                required                                        mandate entry
+                placeholder                                     faded text on entry field
+                name =" "                                       for radio/checkbox to allow single entry, etc.
+                value =" "                                      to give value after selection
+            -->
+            <!-- Form starts -->
+        <form>
+            <label>Username:&nbsp;&nbsp;</label>
+            <input type="text" placeholder="Enter Name" required/><br/><br/>
+            <label>Contact:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="number" placeholder="Enter Number"/><br/><br/>
+            <label>Password:&nbsp;&nbsp;&nbsp;</label>
+            <input type="password" placeholder="Enter Password"/><br/><br/>
+            <label>Choose:</label><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="brand" checked/><label>Tata</label><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="brand" /><label>Mahindra</label> <br/><br/>
+            
+            <!-- Checkbox -->
+            <label>Checkbox:</label><br/>
+            <input type="checkbox"/><label>Safari Accomplished+</label>
+            <input type="checkbox"/><label>Scorpio S11</label>
+            <input type="checkbox" disabled/><label>Thar</label>
+            <input type="checkbox" checked/><label>Thar 5 Door</label> <br/><hr/><br/>
+
+            <!-- Select Dropdown -->
+            <label>Select: </label>
+            <Select>
+                <option></option>
+                <option value="a">Apple</option>
+                <option value="b" disabled>Ball</option>
+                <option value="c">Car</option>
+            </Select><br/><hr/><br/>
+
+            <!-- submit/reset -->
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+        <br/><hr/><br/><br/>
+
+        <label>Upload: </label><input type="file"/>
+        <br/><hr/><br/><br/>
+
+        <!-- formatting the form USING TABLE -->
+        <form>
+            <h2>Form Using Table</h2>
+            <table>
+                <tr>
+                    <td><label>Username:&nbsp;&nbsp;&nbsp;&nbsp;       </label></td>
+                    <td><input type="text" required value="Enter Name"/></td>
+                </tr>
+                <tr>
+                    <td><label>Email:&nbsp;&nbsp;&nbsp;&nbsp;       </label></td>
+                    <td><input type="email" pattern="^[a-z0-9._%+\-]+@[a-z0-9._%+\-]+\.[a-z]{2,3}$" required placeholder="Email"/></td>
+                </tr>
+                <tr>
+                    <td><label>Password: </label></td>
+                    <td><input type="password" required placeholder="Enter Name"/></td>
+                </tr>
+                <tr>
+                    <td><label>Select: </label></td>
+                    <td><Select>
+                        <option></option>
+                        <option value="a">Apple</option>
+                        <option value="b" disabled>Ball</option>
+                        <option value="c">Car</option>
+                    </Select></td>
+                </tr>
+                <tr>
+                    <td><label>Checkbox:</label></td>
+                    <td><input type="checkbox"/><label>Safari Accomplished+</label>
+                        <input type="checkbox" disabled/><label>Scorpio S11</label>
+                        <input type="checkbox" /><label>Thar</label>
+                        <input type="checkbox" checked/><label>Thar 5 Door</label></td>
+                </tr>
+                <tr><td><label>Upload: </label></td>
+                <td><input type="file"/></td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td><input type="submit"/></td></tr>
+            </table>
+        </form>
+        <br/><hr/><br/><br/>
+
+    </body>
+</html>

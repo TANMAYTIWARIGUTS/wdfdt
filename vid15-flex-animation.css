@@ -1,0 +1,65 @@
+/* ADJUSTMENT FOR THE  FLEXBOX */
+.parent{
+    background-color: yellow;
+    height: 600px;
+    display:flex;
+    gap:10px;
+    
+    /* SET HOW THE ITEMS INSIDE FLEX GET DISPLAYED*/
+    /* row-reverse / column / column-reverse / row(default) */
+    flex-direction: column;
+    
+    /* JUSTIFY-CONTENT - (horizontal spacing for horizontal rows) (vertical spacing for vertical column)
+    flex-start(default) / flex-end / center / space-around / space-between (no extreme space) / space-evenly */
+    justify-content: center; 
+    
+    /* ALIGN-ITEMS - (vertical spacing for horizontal rows) (horizontal spacing for vertical column)
+    flex-start(default) / flex-end / center / space-around / space-between (no extreme space) / space-evenly */
+    align-items: center;
+    
+    /* dynamically display items AS PER DISPLAY SIZE */
+    flex-wrap: wrap;
+}
+
+/* ADJUSTMENT FOR THE ITEMS INSIDE FLEXBOX */
+.child{
+    height:100px;
+    width:400px;
+    
+    /* MARGIN GAP AROUND ITEMS INSIDE FLEX */
+    /* margin: 40px 0px 0px 0px; */
+    
+    background-color: white;
+    border: 4px solid blue;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    background-color: blueviolet;
+    color: black;
+    border: 2px solid black;
+    
+    /* property the transition effect is for (all is default value)*/
+    /* transition-property: color; */
+
+    /* start animation after n seconds/mili-seconds */
+    /* transition-delay:1s;  */
+    
+    /* complete animation in n seconds/mili-seconds */
+    /* transition-duration: 2s; */
+
+    /* ease / ease-in / ease-out / ease-in-out */
+    /* transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1); */
+
+    /* SHORTHAND - timing-function >> property >> delay >> duration */
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) all 4s 2s ;
+
+}
+
+button:hover{
+    background-color: black;
+    color: yellow;
+    border: 2px solid blueviolet;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video | Audio | iFrame</title>
+    </head>
+    <body>
+        <!-- iFrame Tag -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Qgduhk26sIw?si=PK3LA9OOVJ1CV7Eh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <!-- Audio Tags:
+            <audio src="..."/>
+            Attributes:
+            autoplay
+            controls
+            muted
+            loop
+            s rc
+            type="audio/mp3"
+        -->
+        <audio controls autoplay preload="auto">
+            <source src="audio.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        
+        
+        <!-- Video Tag:
+                <video src="..."/>
+             Attributes:
+                autoplay
+                controls
+                muted
+                loop
+                src
+                width
+                height
+                type="video/mp4" OR "video/ogg"
+    
+            [can write alt text between <video>...</video>]
+        -->
+        <video src="vid.mp4" type="video/mp4" height="250px"  autoplay  loop muted /> <br/>
+    </body>
+</html>

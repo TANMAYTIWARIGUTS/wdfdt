@@ -1,0 +1,40 @@
+.box{
+    background-color: aqua;
+    height: 100vh;
+    position: relative;
+}
+
+.ball{
+    background-color: black;
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    position: absolute;
+    top:100px;
+    left: 100px;
+}
+
+.ball:hover{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: moveBall 5s ease-in 500ms 2 forwards;
+    cursor:pointer;
+}
+
+@keyframes moveBall{
+    25%{
+        transform: translate(200px,0px); /*move only x-axis 200px assuming its current position as (0,0)*/
+        border-radius: 0%;
+    }
+    50%{
+        transform: translate(200px,200px);
+        border-radius: 20%;
+    }
+    75%{
+        transform: translate(0px,200px);
+        border-radius: 30%;
+    }
+    100%{
+        transform: translate(0px,0px);
+        border-radius: 50%;
+    }
+}

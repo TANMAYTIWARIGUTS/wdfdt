@@ -1,0 +1,120 @@
+/* BOX MODEL */
+h6{
+    border: 2px solid black;
+    padding: 40px;
+    /* use 10px 70px for----- top-down & left-right */
+    /* use 10px 40px 70px 100px for----- top, right, bottom, left */
+    margin:50px;
+}
+/* 
+    padding--------inside border
+    margin--------outside border
+    functioning is same!!
+*/
+
+
+
+
+
+/* 
+    CSS Selectors:
+        element selector
+        selector list
+        * universal
+        # id
+        . class
+        descendent selector
+        direct child selector
+*/
+/* 
+    preference:-
+    CASE1: inline css >> internal css(ONLY IF written after external css) > external css
+    CASE2: inline css >> external css(ONLY IF written after internal css) > internal css
+*/
+#pref{
+    background-color:darkgreen;
+}
+
+
+/* >>>>>direct child - select element which is direct child of an element */
+
+/* THIS WILL NOT WORK, SINCE u IS NOT DIRECT CHILD OF h5
+h5 > u{
+    color:blueviolet;
+    background-color: black;
+}*/
+
+mark > u{ /* THIS WILL WORK, SINCE u IS DIRECT CHILD OF h5*/
+    color:blueviolet;
+    background-color: black;
+}
+
+
+/* >>>>> descendant selector - select element inside an element such as: */
+/* a inside li */
+li a{
+    color:blueviolet;
+    background-color: black;
+}
+
+
+/* >>>>> class - used to select multiple elements with same class name */
+.cl{
+    color:blueviolet;
+    background-color: black;
+}
+
+
+/* >>>>> class - used to select multiple elements with same class name */
+#iden{
+    color:black;
+    background-color: blueviolet;    
+}
+
+
+/* creating a circle using ht, wt & border-radius */
+div{
+    background-color: blueviolet;
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 60%;
+}
+
+
+/* Units in CSS */
+/* 
+        px, %, em, rem, vh, vw
+*/
+
+
+/* 
+    universal selector:-
+        - difference in *{} & body{}:
+        *  >>>> selects all - element, body and html
+        body >>>> selects body
+*/
+/* *{
+    border: 2px dashed blueviolet; 
+    background-color: burlywood;
+    
+    /* border: size type color ----> type: dotted/dashed/solid
+} */
+/* body{
+    border: 2px dashed blueviolet;
+    background-color: burlywood;
+} */
+
+
+/* >>>>> element selector */
+/* h1{
+    background-color: blueviolet;
+    color: aliceblue;
+} */
+
+
+/* >>>>> element list */
+/* h2,p{
+    background-color:coral;
+    color: black;
+} */

@@ -1,0 +1,94 @@
+/*  
+    ............................................PSEUDO CLASS............................................
+    [STATES OF AN ELEMENT]
+            :hover{}.............pointing the cursor on the button
+            :active{}............when we we hold left key of the mouse it will be in active state
+            :focus{}.............already visisted that button / or opened or clicked the btn
+        link:
+            a:link{}..............unvisited link
+            a:visited{}...........visited link
+        
+    [ACCESSING CHILD OF AN ELEMENT]
+            :nth-child()
+            :first-child{}
+            :last-child{}
+        odd/even children:
+            :nth-child(odd)
+            :nth-child(even) 
+*/
+
+button:hover{
+    background-color: blueviolet;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+button:active{
+    background-color:aliceblue;
+    color: blueviolet;
+}
+
+button:focus{
+    background-color:brown;
+    color: white;
+}
+
+a:link{
+    color:brown;
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover{
+    cursor:grab;
+}
+
+span{
+    padding:5px;
+    margin:15px;
+    background-color:blueviolet;
+    color: white;
+}
+span:first-child{
+    background-color:rgb(226, 95, 43);
+    color: black;
+}
+span:nth-child(even){
+    background-color: yellow;
+    color:black;
+}
+span:last-child{
+    background-color: green;
+    color:white;
+}
+
+/* PSEUDO ELEMENTS */
+h1::before{
+    content:"Hey ";
+}
+h1::after{
+    content:" sup!?";
+}
+
+.ps{
+    background-color: blueviolet;
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    margin-left: 100px;
+    position:relative;
+}
+
+.ps::before{
+    content:" ";
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    background-color: black;
+    position:absolute;
+    bottom:50px;
+    left: 50px;
+
+}

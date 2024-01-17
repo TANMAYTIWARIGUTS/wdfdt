@@ -1,0 +1,54 @@
+/* POSITIONS */
+/* 
+    Position: static/relative/fixed/sticky/absolute
+    offset: top/right/bottom/left (not used in case of default POSITION i.e. STATIC
+*/
+.bb{
+    /* lines 8-10 will move the element from BOTTOM & LEFT RELATIVE to its current position  */
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    background-color: blueviolet;
+    color:aliceblue;
+}
+
+
+/* BOX MODEL */
+h1{
+    border:2px solid blueviolet;
+
+    /* padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 40px; */
+    padding: 20px 0px 30px 40px;
+
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px; */
+    margin: 20px 20px 30px 40px;
+}
+
+
+/*  DISPLAY */
+/* will only occupy required space BUT WILL ALSO CONSIDER height & width */
+.disp{
+    display:inline-block;
+    background-color: blueviolet;
+    margin:4px;
+}
+
+/* will only occupy required space HEIGHT & WIDTH DOESN'T MATTER HERE*/
+.disp1{
+    display:inline;
+    background-color: blueviolet;
+    margin:4px;
+}
+
+/* will take whole block WIDTH space */
+.disp2{
+    display:block;
+    background-color: blueviolet;
+    margin:4px;
+}

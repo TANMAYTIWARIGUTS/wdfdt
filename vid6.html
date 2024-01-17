@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tables & input tags (forms)</title>
+    </head>
+    <body>
+        <marquee> Table Tags</marquee>
+        <!-- 
+            table   - row  - data
+            <table> - <tr> - <td>        
+        -->
+        <center> <!-- to center the table-->
+        <table border="5" style="border-collapse:collapse">
+            <tr>
+                <th>col1</th>
+                <th>col2</th>
+                <th>col3</th>
+            </tr>
+            <tr> 
+                <td>1</td>
+                <td>2</td>
+                <td>col3</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td colspan="2">4</td>
+                <!-- <td>col3</td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">5</td>
+                <td>6</td>
+                <td>col3</td>
+            </tr>
+            <tr>
+                <!-- <td>7</td> -->
+                <td>8</td>
+                <td>col3</td>
+            </tr>
+        </table>
+    </center> <hr/>
+
+    <!-- Input Tags  -->
+    <marquee> Input Tags</marquee>
+    <!-- 
+        Tags used:
+            <input/>                simply input
+            <label></label>         label the input field
+            &nbsp;                  provide space
+        
+        Attributes:
+            type="number/text/password/radio"             to restrict the type of data entry              used in input tag
+            required                                      to make the entry mandatory                     used in input tag
+            name=" "                                      group multiple input-radio tags to allow single entry
+     -->
+    <input/>
+    <input type="number"/>
+    <input type="date"/>
+    <input type="datetime"/>
+    <input type="datetime-local"/>
+    <br/><br/>  <label>User Name:</label>                   <input type="text" placeholder="this is placeholder"/>
+    <br/><br/>  <label>Password:&nbsp;&nbsp;</label>  <input type="password" placeholder="required attribute used" required/>
+    <br/><br/>  <label>Choose:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="radio" name="one"/><label>apple</label>
+                        <input type="radio" name="one"/><label>mango</label>
+    <!-- 8050279120 -->
+</body>
+</html>      
