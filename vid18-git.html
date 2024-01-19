@@ -1,0 +1,84 @@
+<!----------------------------------------------------BEM APPROACH----------------------------------------------------
+    To avoid same id/class NAMES of the ITEM of different SECTIONS
+    - Section1__card_body
+    - Section2__card_body
+-->
+
+<!----------------------------------------------------GIT COMMANDS--------------------------------------------------
+  MASTER/MAIN:-
+      modified on vs code:
+      - git status
+      - git add filename.extension
+      - git status
+      - git commit -m "modified message here"
+      - git push origin master/main
+
+      modified on github:
+      - commit changes...
+      - commit message >> commit changes
+      - open vs code >> git pull origin master/main
+
+  BRANCH:-
+  [NOTE: Before the project get into production, it should be in master/main branch]
+      vs code:
+      - git checkout -b branch-name (to create branch)
+      - modify
+      - git add .
+      - git status
+      - git commit -m "New Branch Created"
+      - git push origin branch-name
+      - git checkout master (to exit branch) (come to master)
+
+      github:
+      - master dropdown >> create the branch
+  
+  MERGE Master & Branch:-
+      - Compare & pull request
+
+-->
+
+<!------------------------------------------------------Detailed----------------------------------------------------
+  - create a repo on GitHub
+- SET-UP
+    goto folder on computer type on path - "cmd"
+    type:
+        git init
+        - create git repository with .git extension in pc folder
+
+        git remote add origin <https://...> 
+        - make connection between CLOUD GitHub and LOCAL VS Code
+
+        git code . OR directly open vs code from the file
+        - open VS Code with same file location
+        
+        git config -- global user.name "TANMAYTIWARIGUTS"
+        git config -- global user.email "THETANMAYTIWARI@GMAIL.COM"
+- After opening VS Code
+      - create a README.md file
+      - to PUSH it on global GitHub:
+        (changes done through local VS Code pushed to global GitHub)
+          - open terminal
+
+          - "git status"
+            this will show "no commits yet", will also show README.md file name in RED COLOR
+            (means this file is not pushed yet)
+
+          - "git add README.md"
+            to add the file OR "git add ." to add all files
+
+          - "git status"
+            will show file name in GREEN COLOR
+
+          - to be descriptive type "git commit -m "Added README.md"
+            [NOTE: without commit, push won't work]
+
+          - "git push" (this will give cmd > copy it and paste it)
+            OR
+            "git push origin master/main"
+            code will get pushed | will create a branch
+      - to PULL it from GitHub
+        (changes done through global GitHub pulled on local VS Code)
+
+        "git pull origin master/main"
+
+-->
